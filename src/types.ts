@@ -51,9 +51,13 @@ export type TImageProps<TStyle = Record<string, any>> = {
   cntrClassName?: string;
   cntrStyle?: TStyle;
   captionClassName?: string;
+  noShadow?: boolean;
 };
 
 export type THtmlProps<TStyle = Record<string, any>> =
   ComponentStyleProps<TStyle> & {
     content: string;
   };
+
+export type TSeparatorProps<TStyle = Record<string, any>> =
+  ComponentStyleProps<TStyle>;
