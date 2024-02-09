@@ -1,6 +1,6 @@
 {
   "name": "@cloakui/types",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Shared TS types for all @cloakui/{framework}-primitives packages.",
   "main": "dist/index",
   "types": "dist/index.d.ts",
