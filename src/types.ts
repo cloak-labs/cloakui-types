@@ -52,6 +52,8 @@ export type TImageProps<TStyle = Record<string, any>> = {
   cntrStyle?: TStyle;
   captionClassName?: string;
   noShadow?: boolean;
+  sizes?: string;
+  srcSet?: string;
 };
 
 export type THtmlProps<TStyle = Record<string, any>> =
