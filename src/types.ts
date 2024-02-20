@@ -12,6 +12,15 @@ export type GenericParentComponent<
   TChildren = any
 > = WithChildren<ComponentStyleProps<TStyle>, TChildren>;
 
+export type ContainerProps<
+  TStyle = Record<string, any>,
+  TChildren = any,
+  TAs = string
+> = GenericParentComponent<TStyle, TChildren> & {
+  cntrClassName?: string;
+  as?: TAs;
+};
+
 export type TTypographyProps<
   TStyle = Record<string, any>,
   TChildren = any

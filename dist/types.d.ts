@@ -6,6 +6,10 @@ export type WithChildren<T, TChildren = any> = T & {
     children?: TChildren;
 };
 export type GenericParentComponent<TStyle = Record<string, any>, TChildren = any> = WithChildren<ComponentStyleProps<TStyle>, TChildren>;
+export type ContainerProps<TStyle = Record<string, any>, TChildren = any, TAs = string> = GenericParentComponent<TStyle, TChildren> & {
+    cntrClassName?: string;
+    as?: TAs;
+};
 export type TTypographyProps<TStyle = Record<string, any>, TChildren = any> = GenericParentComponent<TStyle, string | TChildren>;
 export type TTypographyListProps<TStyle = Record<string, any>, TChildren = any> = TTypographyProps<TStyle, TChildren> & {
     as: "ol" | "ul";
