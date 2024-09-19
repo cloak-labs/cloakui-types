@@ -1,6 +1,9 @@
-export type ComponentStyleProps<TStyle = Record<string, any>> = {
-  className?: string;
+export type ComponentStyleProps<
+  TStyle = Record<string, any>,
+  TClassName = string
+> = {
   style?: TStyle;
+  className?: TClassName;
 };
 
 export type WithChildren<T, TChildren = any> = T & {
@@ -54,6 +57,7 @@ export type TImageProps<TStyle = Record<string, any>> = {
   width?: number;
   height?: number;
   href?: string;
+  target?: "_blank" | "_self" | "_parent" | "_top";
   caption?: string;
   className?: string;
   style?: TStyle;
